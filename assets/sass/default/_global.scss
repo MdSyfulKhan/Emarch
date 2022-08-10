@@ -1,0 +1,95 @@
+.cs_normal{
+  font-weight: 400;
+}
+.cs_medium{
+  font-weight: 500;
+}
+.cs_semibold{
+  font-weight: 600;
+}
+.cs_bold{
+  font-weight: 700;
+}
+
+.cs_font_14{
+  font-size: 14px;
+}
+.cs_font_16{
+  font-size: 16px;
+}
+.cs_font_18{
+  font-size: 18px;
+}
+// .cs_font_{
+//   font-size: px;
+// }
+// .cs_font_{
+//   font-size: px;
+// }
+// .cs_font_{
+//   font-size: px;
+// }
+// .cs_font_{
+//   font-size: px;
+// }
+// .cs_font_{
+//   font-size: px;
+// }
+// .cs_font_{
+//   font-size: px;
+// }
+// .cs_font_{
+//   font-size: px;
+// }
+// .cs_font_{
+//   font-size: px;
+// }
+// .cs_font_{
+//   font-size: px;
+// }
+// .cs_font_{
+//   font-size: px;
+// }
+// .cs_font_{
+//   font-size: px;
+// }
+
+.cs_overflow_hidden{
+  overflow: hidden;
+}
+
+
+.cs_accent_bg,
+.cs_accent_bg_hover:hover{
+  color: green;
+}
+
+.cs_white_color,
+.cs_white_color_hover:hover{
+  color: $white;
+}
+.cs_white_bg,
+.cs_white_bg_hover:hover{
+  background-color: $white;
+}
+
+
+
+.cs_black_color,
+.cs_black_color_hover:hover{
+  color: $black;
+}
+
+
+
+.cs_primary_color,
+.cs_primary_color_hover:hover{
+  color: $primary;
+}
+
+
+
+.cs_secondary_color,
+.cs_secondary_color_hover:hover{
+  color: $secondary;
+}

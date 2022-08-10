@@ -1,0 +1,571 @@
+@import url("https://fonts.googleapis.com/css2?family=Urbanist:wght@100;200;300;400;500;600;700;800;900&display=swap");
+.cs_normal {
+  font-weight: 400;
+}
+
+.cs_medium {
+  font-weight: 500;
+}
+
+.cs_semibold {
+  font-weight: 600;
+}
+
+.cs_bold {
+  font-weight: 700;
+}
+
+.cs_font_14 {
+  font-size: 14px;
+}
+
+.cs_font_16 {
+  font-size: 16px;
+}
+
+.cs_font_18 {
+  font-size: 18px;
+}
+
+.cs_overflow_hidden {
+  overflow: hidden;
+}
+
+.cs_accent_bg,
+.cs_accent_bg_hover:hover {
+  color: green;
+}
+
+.cs_white_color,
+.cs_white_color_hover:hover {
+  color: #fff;
+}
+
+.cs_white_bg,
+.cs_white_bg_hover:hover {
+  background-color: #fff;
+}
+
+.cs_black_color,
+.cs_black_color_hover:hover {
+  color: #000;
+}
+
+.cs_primary_color,
+.cs_primary_color_hover:hover {
+  color: #303030;
+}
+
+.cs_secondary_color,
+.cs_secondary_color_hover:hover {
+  color: #707188;
+}
+
+/**
+ Theme Name: Project Name
+ Author: Author_name
+ Developer: Enter your name
+ Version: 1.0.0
+ */
+/*Google Fonts*/
+/*--------------------------------------------------------------
+>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+1. Typography
+2. Spacing
+3. General Style
+
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+1. Typography
+----------------------------------------------------------------*/
+body,
+html {
+  color: #707188;
+  background-color: #fff;
+  font-family: "Urbanist", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5em;
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h3,
+h6 {
+  clear: both;
+  color: #303030;
+  padding: 0;
+  margin: 0 0 10px 0;
+  font-family: "Urbanist", sans-serif;
+  font-weight: 700;
+  line-height: 1.2em;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+h2 {
+  font-size: 34px;
+}
+
+h3 {
+  font-size: 26px;
+}
+
+h4 {
+  font-size: 22px;
+}
+
+h5 {
+  font-size: 18px;
+}
+
+h6 {
+  font-size: 15px;
+}
+
+p {
+  margin-bottom: 12px;
+}
+
+ul {
+  margin: 0 0 15px 0;
+  padding-left: 15px;
+  list-style: square outside none;
+}
+
+ol {
+  padding-left: 15px;
+  margin-bottom: 15px;
+}
+
+dfn,
+cite,
+em,
+i {
+  font-style: italic;
+}
+
+blockquote {
+  margin: 0 15px;
+}
+
+address {
+  margin: 0 0 15px;
+}
+
+img {
+  border: 0;
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  color: inherit;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+  color: inherit;
+}
+
+@media screen and (max-width: 991px) {
+  body,
+  html {
+    font-size: 14px;
+  }
+}
+
+/*--------------------------------------------------------------
+3. General Style
+----------------------------------------------------------------*/
+.cs_mp0 {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.cs_flex-center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.cs_flex-space-between {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.cs_zoom {
+  position: relative;
+  overflow: hidden;
+}
+
+.cs_zoom .cs_zoom-in {
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.cs_zoom:hover .cs_zoom-in {
+  -webkit-transform: scale(1.07);
+          transform: scale(1.07);
+}
+
+.cs_vertical-middle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+}
+
+.cs_vertical-middle .cs_vertical-middle-in {
+  width: 100%;
+}
+
+.cs_bg {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.cs_sticky-footer {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+}
+
+/*--------------------------------------------------------------
+2. Spacing
+----------------------------------------------------------------*/
+@media screen and (min-width: 992px) {
+  .cs_height-b0 {
+    height: 0px;
+  }
+  .cs_height-b5 {
+    height: 5px;
+  }
+  .cs_height-b10 {
+    height: 10px;
+  }
+  .cs_height-b15 {
+    height: 15px;
+  }
+  .cs_height-b20 {
+    height: 20px;
+  }
+  .cs_height-b25 {
+    height: 25px;
+  }
+  .cs_height-b30 {
+    height: 30px;
+  }
+  .cs_height-b35 {
+    height: 35px;
+  }
+  .cs_height-b40 {
+    height: 40px;
+  }
+  .cs_height-b45 {
+    height: 45px;
+  }
+  .cs_height-b50 {
+    height: 50px;
+  }
+  .cs_height-b55 {
+    height: 55px;
+  }
+  .cs_height-b60 {
+    height: 60px;
+  }
+  .cs_height-b65 {
+    height: 65px;
+  }
+  .cs_height-b70 {
+    height: 70px;
+  }
+  .cs_height-b75 {
+    height: 75px;
+  }
+  .cs_height-b80 {
+    height: 80px;
+  }
+  .cs_height-b85 {
+    height: 85px;
+  }
+  .cs_height-b90 {
+    height: 90px;
+  }
+  .cs_height-b95 {
+    height: 95px;
+  }
+  .cs_height-b100 {
+    height: 100px;
+  }
+  .cs_height-b105 {
+    height: 105px;
+  }
+  .cs_height-b110 {
+    height: 110px;
+  }
+  .cs_height-b115 {
+    height: 115px;
+  }
+  .cs_height-b120 {
+    height: 120px;
+  }
+  .cs_height-b125 {
+    height: 125px;
+  }
+  .cs_height-b130 {
+    height: 130px;
+  }
+  .cs_height-b135 {
+    height: 135px;
+  }
+  .cs_height-b140 {
+    height: 140px;
+  }
+  .cs_height-b145 {
+    height: 145px;
+  }
+  .cs_height-b150 {
+    height: 150px;
+  }
+  .cs_height-b155 {
+    height: 155px;
+  }
+  .cs_height-b160 {
+    height: 160px;
+  }
+  .cs_height-b165 {
+    height: 165px;
+  }
+  .cs_height-b170 {
+    height: 170px;
+  }
+  .cs_height-b175 {
+    height: 175px;
+  }
+  .cs_height-b180 {
+    height: 180px;
+  }
+  .cs_height-b185 {
+    height: 185px;
+  }
+  .cs_height-b190 {
+    height: 190px;
+  }
+  .cs_height-b195 {
+    height: 195px;
+  }
+  .cs_height-b200 {
+    height: 200px;
+  }
+  .cs_height-b205 {
+    height: 205px;
+  }
+  .cs_height-b210 {
+    height: 210px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .cs_height-lg-b0 {
+    height: 0px;
+  }
+  .cs_height-lg-b5 {
+    height: 5px;
+  }
+  .cs_height-lg-b10 {
+    height: 10px;
+  }
+  .cs_height-lg-b15 {
+    height: 15px;
+  }
+  .cs_height-lg-b20 {
+    height: 20px;
+  }
+  .cs_height-lg-b25 {
+    height: 25px;
+  }
+  .cs_height-lg-b30 {
+    height: 30px;
+  }
+  .cs_height-lg-b35 {
+    height: 35px;
+  }
+  .cs_height-lg-b40 {
+    height: 40px;
+  }
+  .cs_height-lg-b45 {
+    height: 45px;
+  }
+  .cs_height-lg-b50 {
+    height: 50px;
+  }
+  .cs_height-lg-b55 {
+    height: 55px;
+  }
+  .cs_height-lg-b60 {
+    height: 60px;
+  }
+  .cs_height-lg-b65 {
+    height: 65px;
+  }
+  .cs_height-lg-b70 {
+    height: 70px;
+  }
+  .cs_height-lg-b75 {
+    height: 75px;
+  }
+  .cs_height-lg-b80 {
+    height: 80px;
+  }
+  .cs_height-lg-b85 {
+    height: 85px;
+  }
+  .cs_height-lg-b90 {
+    height: 90px;
+  }
+  .cs_height-lg-b95 {
+    height: 95px;
+  }
+  .cs_height-lg-b100 {
+    height: 100px;
+  }
+  .cs_height-lg-b105 {
+    height: 105px;
+  }
+  .cs_height-lg-b110 {
+    height: 110px;
+  }
+  .cs_height-lg-b115 {
+    height: 115px;
+  }
+  .cs_height-lg-b120 {
+    height: 120px;
+  }
+  .cs_height-lg-b125 {
+    height: 125px;
+  }
+  .cs_height-lg-b130 {
+    height: 130px;
+  }
+  .cs_height-lg-b135 {
+    height: 135px;
+  }
+  .cs_height-lg-b140 {
+    height: 140px;
+  }
+  .cs_height-lg-b145 {
+    height: 145px;
+  }
+  .cs_height-lg-b150 {
+    height: 150px;
+  }
+  .cs_height-lg-b155 {
+    height: 155px;
+  }
+  .cs_height-lg-b160 {
+    height: 160px;
+  }
+  .cs_height-lg-b165 {
+    height: 165px;
+  }
+  .cs_height-lg-b170 {
+    height: 170px;
+  }
+  .cs_height-lg-b175 {
+    height: 175px;
+  }
+  .cs_height-lg-b180 {
+    height: 180px;
+  }
+  .cs_height-lg-b185 {
+    height: 185px;
+  }
+  .cs_height-lg-b190 {
+    height: 190px;
+  }
+  .cs_height-lg-b195 {
+    height: 195px;
+  }
+  .cs_height-lg-b200 {
+    height: 200px;
+  }
+  .cs_height-lg-b205 {
+    height: 205px;
+  }
+  .cs_height-lg-b210 {
+    height: 210px;
+  }
+}
+
+.cs_product.cs_style1 .cs_product_block {
+  position: relative;
+  background-color: #f2f3f5;
+}
+
+.cs_product.cs_style1 .cs_product_block span {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  padding: 3px 10px;
+  background-color: #D9001C;
+  color: #fff;
+}
+
+.cs_product.cs_style1 .add_to_cart {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  top: 100%;
+}
+
+.cs_product.cs_style1:hover .add_to_cart {
+  top: 80%;
+}
+
+.cs_product.cs_style1 .cs_product_metas {
+  padding: 15px 10px;
+}
+
+.add_to_cart.cs_style1 {
+  width: 100%;
+  height: 50px;
+  max-width: 260px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+/*# sourceMappingURL=style.css.map */

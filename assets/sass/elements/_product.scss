@@ -1,0 +1,27 @@
+.cs_product.cs_style1{
+  .cs_product_block{
+    position: relative;
+    background-color: #f2f3f5;
+    span{
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      padding: 3px 10px;
+      background-color: $red;
+      color: #fff;
+    }
+  }
+  .add_to_cart{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 100%;
+
+  }
+  &:hover .add_to_cart{
+    top: 80%;
+  }
+  .cs_product_metas{
+    padding: 15px 10px;
+  }
+}

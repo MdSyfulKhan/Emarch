@@ -1,0 +1,10 @@
+$accent: #0046BE;
+
+.cs_accent_color,
+.cs_accent_color_hover:hover{
+  color: $accent;
+}
+.cs_accent_bg,
+.cs_accent_bg_hover:hover{
+  background-color: $accent;
+}
