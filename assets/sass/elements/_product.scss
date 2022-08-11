@@ -1,27 +1,36 @@
-.cs_product.cs_style1{
-  .cs_product_block{
+.cs_product.cs_style1 {
+  transition: 0.4s;
+  .cs_product_block {
     position: relative;
     background-color: #f2f3f5;
-    span{
-      position: absolute;
-      top: 10px;
-      left: 10px;
-      padding: 3px 10px;
-      background-color: $red;
-      color: #fff;
-    }
+    z-index: 1;
   }
-  .add_to_cart{
+  .cs_product_lable {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    padding: 3px 10px;
+    line-height: 19px;
+    color: $white;
+    background-color: $red;
+    z-index: 111;
+  }
+  .add_to_cart {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
     top: 100%;
-
+    z-index: 11;
+    opacity: 0;
   }
-  &:hover .add_to_cart{
+  &:hover .add_to_cart {
     top: 80%;
+    opacity: 1;
   }
-  .cs_product_metas{
+  .cs_product_metas {
     padding: 15px 10px;
+  }
+  .cs_product_cart {
+    margin-bottom: 5px;
   }
 }

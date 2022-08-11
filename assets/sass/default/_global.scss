@@ -20,6 +20,9 @@
 .cs_font_18{
   font-size: 18px;
 }
+.cs_font_38{
+  font-size: 38px;
+}
 // .cs_font_{
 //   font-size: px;
 // }
@@ -50,19 +53,80 @@
 // .cs_font_{
 //   font-size: px;
 // }
-// .cs_font_{
-//   font-size: px;
-// }
+.cs_uppercase{
+  text-transform: uppercase;
+}
+
+.cs_inline_block{
+  display: inline-block;
+}
+.cs_inline_flex{
+  display: inline-flex;
+}
+.cs_text_center{
+  text-align: center;
+}
+.cs_product_wish_icon {
+  cursor: pointer;
+  position: relative;
+  right: 10px;
+  flex: none;
+  svg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(-50%,-50%);
+    fill: $accent2;
+    stroke: $white;
+    stroke-width: 0.5;
+  }
+  > .cs_icon{
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(-50%,-50%);
+    font-size: 20px;
+    color: $red;
+    display: none;
+  }
+  &.wished{
+    svg{
+      display: none;
+    }
+    .cs_icon{
+      display: block;
+    }
+  }
+}
+
+.cs_zoom{
+  transition: 0.6s;
+  &:hover .cs_zoom_in{
+    transform: scale(1.1);
+  }
+}
+
+.cs_animated_border.cs_style1{
+  position: relative;
+  transition: 0.4s ease;
+  &::before{
+    transition: inherit;
+    position: absolute;
+    content: "";
+    height: 1px;
+    width: 60%;
+    background-color: $primary;
+    bottom: -5px;
+  }
+  &:hover::before{
+    width: 100%;
+  }
+}
 
 .cs_overflow_hidden{
   overflow: hidden;
 }
 
-
-.cs_accent_bg,
-.cs_accent_bg_hover:hover{
-  color: green;
-}
 
 .cs_white_color,
 .cs_white_color_hover:hover{
@@ -74,17 +138,22 @@
 }
 
 
-
 .cs_black_color,
 .cs_black_color_hover:hover{
   color: $black;
 }
-
-
+.cs_black_bg,
+.cs_black_bg_hover:hover{
+  background-color: $black;
+}
 
 .cs_primary_color,
 .cs_primary_color_hover:hover{
   color: $primary;
+}
+.cs_primary_bg,
+.cs_primary_bg_hover:hover{
+  background-color: $primary;
 }
 
 
@@ -93,3 +162,46 @@
 .cs_secondary_color_hover:hover{
   color: $secondary;
 }
+.cs_secondary_bg,
+.cs_secondary_bg_hover:hover{
+  background-color: $secondary;
+}
+
+.cs_accent_color1,
+.cs_accent_color1_hover:hover{
+  color: $accent1;
+}
+.cs_accent_bg1,
+.cs_accent_bg1_hover:hover{
+  background-color: $accent1;
+}
+
+
+.cs_accent_color2,
+.cs_accent_color2_hover:hover{
+  color: $accent2;
+}
+.cs_accent_bg2,
+.cs_accent_bg2_hover:hover{
+  background-color: $accent2;
+}
+
+.cs_base_color1,
+.cs_base_color1_hover:hover{
+  color: $base_color1;
+}
+.cs_base_bg1,
+.cs_base_bg1_hover:hover{
+  background-color: $base_color1;
+}
+
+.cs_base_color2,
+.cs_base_color2_hover:hover{
+  color: $base_color2;
+}
+.cs_base_bg2,
+.cs_base_bg2_hover:hover{
+  background-color: $base_color2;
+}
+
+

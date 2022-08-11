@@ -7,13 +7,13 @@
   padding: 0;
 }
 
-.cs_flex-center {
+.cs_center {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.cs_flex-space-between {
+.cs_space_between {
   display: flex;
   justify-content: space-between;
 }
@@ -22,22 +22,22 @@
   position: relative;
   overflow: hidden;
 
-  .cs_zoom-in {
+  .cs_zoom_in {
     transition: all 0.4s ease-in-out;
   }
 
   &:hover {
-    .cs_zoom-in {
+    .cs_zoom_in {
       transform: scale(1.07);
     }
   }
 }
 
-.cs_vertical-middle {
+.cs_vertical_middle {
   display: flex;
   align-items: center;
   height: 100%;
-  .cs_vertical-middle-in {
+  .cs_vertical_middle_in {
     width: 100%;
   }
 }
@@ -48,7 +48,7 @@
   background-size: cover;
 }
 
-.cs_sticky-footer {
+.cs_sticky_footer {
   width: 100%;
   position: fixed;
   bottom: 0;
